@@ -30,6 +30,7 @@ test-results
 __diff_output__
 .jest-cache
 src/__tests__/
+dist/__tests__/
 
 # examples
 examples
