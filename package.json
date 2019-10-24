@@ -4,15 +4,18 @@
   "description": "Jeffrey Hsu's React Component Library",
   "main": "index.js",
   "dependencies": {
+    "jest": "^24.9.0",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0",
+    "require-context.macro": "^1.2.2",
     "styled-components": "^4.4.0"
   },
   "scripts": {
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!your-module-name)/\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,10 +34,13 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.2.5",
-    "@storybook/addon-links": "^5.2.5",
     "@storybook/addon-knobs": "^5.2.5",
+    "@storybook/addon-links": "^5.2.5",
+    "@storybook/addon-storyshots": "^5.2.5",
+    "@storybook/addon-storyshots-puppeteer": "^5.2.5",
     "@storybook/addons": "^5.2.5",
-    "@storybook/react": "^5.2.5"
+    "@storybook/react": "^5.2.5",
+    "react-test-renderer": "^16.11.0"
   },
   "repository": {
     "type": "git",
