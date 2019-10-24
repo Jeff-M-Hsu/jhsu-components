@@ -1,6 +1,6 @@
 {
   "name": "jhsu-components",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Jeffrey Hsu's React Component Library",
   "main": "index.js",
   "dependencies": {
