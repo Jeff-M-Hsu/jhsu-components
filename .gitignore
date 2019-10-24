@@ -22,4 +22,17 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-__tests__/
+# node & npm
+*.log
+
+# test
+test-results
+__diff_output__
+.jest-cache
+src/__tests__/
+
+# examples
+examples
+
+# IDE
+.idea
