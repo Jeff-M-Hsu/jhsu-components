@@ -1,15 +1,24 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 
-var _templateObject = _taggedTemplateLiteral(['\n  * {\n    @import url(\'https://fonts.googleapis.com/css?family=Roboto&display=swap\');\n    font-family: Roboto, Helvetica, sans-serif !important;\n  }\n'], ['\n  * {\n    @import url(\'https://fonts.googleapis.com/css?family=Roboto&display=swap\');\n    font-family: Roboto, Helvetica, sans-serif !important;\n  }\n']);
+var _styledComponents = require("styled-components");
 
-var _styledComponents = require('styled-components');
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  * {\n    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');\n    font-family: Roboto, Helvetica, sans-serif !important;\n  }\n"]);
 
-function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+  _templateObject = function _templateObject() {
+    return data;
+  };
 
-var GlobalStyle = (0, _styledComponents.createGlobalStyle)(_templateObject);
+  return data;
+}
 
-exports.default = GlobalStyle;
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var GlobalStyle = (0, _styledComponents.createGlobalStyle)(_templateObject());
+var _default = GlobalStyle;
+exports.default = _default;

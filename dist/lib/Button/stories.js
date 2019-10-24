@@ -1,20 +1,18 @@
-'use strict';
+"use strict";
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _react = _interopRequireDefault(require("react"));
 
-var _react = require('react');
+var _react2 = require("@storybook/react");
 
-var _react2 = _interopRequireDefault(_react);
+var _addonActions = require("@storybook/addon-actions");
 
-var _react3 = require('@storybook/react');
+var _addonKnobs = require("@storybook/addon-knobs");
 
-var _addonActions = require('@storybook/addon-actions');
-
-var _addonKnobs = require('@storybook/addon-knobs');
-
-var _Button = require('./Button');
+var _Button = _interopRequireDefault(require("./Button"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 var themes = {
   "Primary button (primary)": "primary",
@@ -27,7 +25,6 @@ var sizes = {
   Medium: "medium",
   Large: "large"
 };
-
 var props = {
   regular: function regular() {
     return {
@@ -40,12 +37,9 @@ var props = {
     };
   }
 };
-
-(0, _react3.storiesOf)("Buttons", module).addDecorator(_addonKnobs.withKnobs).add('with text', function () {
+(0, _react2.storiesOf)("Buttons", module).addDecorator(_addonKnobs.withKnobs).add('with text', function () {
   var regularProps = props.regular();
-  return _react2.default.createElement(
-    _Button.Button,
-    _extends({}, regularProps, { onClick: (0, _addonActions.action)('clicked') }),
-    'Hello Button'
-  );
+  return _react.default.createElement(_Button.default, _extends({}, regularProps, {
+    onClick: (0, _addonActions.action)('clicked')
+  }), "Hello Button");
 });

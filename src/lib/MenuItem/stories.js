@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, select, boolean, number } from '@storybook/addon-knobs';
-import { MenuItem } from './MenuItem';
+import MenuItem from './MenuItem';
 
 const sizes = {
   Small: "small",

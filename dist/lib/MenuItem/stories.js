@@ -1,27 +1,24 @@
-'use strict';
+"use strict";
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+var _react = _interopRequireDefault(require("react"));
 
-var _react = require('react');
+var _react2 = require("@storybook/react");
 
-var _react2 = _interopRequireDefault(_react);
+var _addonActions = require("@storybook/addon-actions");
 
-var _react3 = require('@storybook/react');
+var _addonKnobs = require("@storybook/addon-knobs");
 
-var _addonActions = require('@storybook/addon-actions');
-
-var _addonKnobs = require('@storybook/addon-knobs');
-
-var _MenuItem = require('./MenuItem');
+var _MenuItem = _interopRequireDefault(require("./MenuItem"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 var sizes = {
   Small: "small",
   Medium: "medium",
   Large: "large"
 };
-
 var props = {
   regular: function regular() {
     return {
@@ -33,26 +30,13 @@ var props = {
     };
   }
 };
-
-(0, _react3.storiesOf)("MenuItem", module).addDecorator(_addonKnobs.withKnobs).add("with text", function () {
+(0, _react2.storiesOf)("MenuItem", module).addDecorator(_addonKnobs.withKnobs).add("with text", function () {
   var regularProps = props.regular();
-  return _react2.default.createElement(
-    'div',
-    null,
-    _react2.default.createElement(
-      _MenuItem.MenuItem,
-      _extends({ size: 'small' }, regularProps),
-      'Menu Item'
-    ),
-    _react2.default.createElement(
-      _MenuItem.MenuItem,
-      _extends({ size: 'medium' }, regularProps),
-      'Menu Item'
-    ),
-    _react2.default.createElement(
-      _MenuItem.MenuItem,
-      _extends({ size: 'large' }, regularProps),
-      'Menu Item'
-    )
-  );
+  return _react.default.createElement("div", null, _react.default.createElement(_MenuItem.default, _extends({
+    size: "small"
+  }, regularProps), "Menu Item"), _react.default.createElement(_MenuItem.default, _extends({
+    size: "medium"
+  }, regularProps), "Menu Item"), _react.default.createElement(_MenuItem.default, _extends({
+    size: "large"
+  }, regularProps), "Menu Item"));
 });
