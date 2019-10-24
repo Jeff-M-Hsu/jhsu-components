@@ -3,7 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Button = undefined;
 
 var _templateObject = _taggedTemplateLiteral(['\n  border-radius: 3px;\n  padding: .25em 1em;\n  margin: .5em 1em;\n  font-size: ', ';\n  background: ', ';\n  border: ', ';\n  color: ', ';\n  opacity: ', ';\n'], ['\n  border-radius: 3px;\n  padding: .25em 1em;\n  margin: .5em 1em;\n  font-size: ', ';\n  background: ', ';\n  border: ', ';\n  color: ', ';\n  opacity: ', ';\n']);
 
@@ -73,7 +72,7 @@ var ButtonWrapper = _styledComponents2.default.button(_templateObject, fontSize,
   return props.disabled ? ".5" : "1";
 });
 
-var Button = exports.Button = function Button(props) {
+var Button = function Button(props) {
   return _react2.default.createElement(
     ButtonWrapper,
     props,
@@ -90,3 +89,4 @@ Button.defaultProps = {
 Button.propTypes = {
   type: _propTypes2.default.string
 };
+exports.default = Button;

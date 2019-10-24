@@ -27,6 +27,8 @@ const MenuItemWrapper = styled.a`
   }
 `
 
-export const MenuItem = (props) => {
+const MenuItem = (props) => {
   return <MenuRow><MenuItemWrapper {...props}>{props.children}</MenuItemWrapper></MenuRow>;
 }
+
+export default MenuItem;

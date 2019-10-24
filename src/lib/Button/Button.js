@@ -59,7 +59,7 @@ const ButtonWrapper = styled.button`
   opacity: ${props => props.disabled ? ".5" : "1"};
 `
 
-export const Button = (props) => {
+const Button = (props) => {
   return <ButtonWrapper {...props}>{props.children}</ButtonWrapper>;
 }
 
@@ -72,3 +72,4 @@ Button.defaultProps = {
 Button.propTypes = {
   type: PropTypes.string,
 }
+export default Button;

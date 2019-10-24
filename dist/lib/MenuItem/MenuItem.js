@@ -3,7 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.MenuItem = undefined;
 
 var _templateObject = _taggedTemplateLiteral(['\n  padding: .5rem;\n'], ['\n  padding: .5rem;\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  padding-right: ', 'em;\n  font-size: ', ';\n  color: #d9d9d9;\n  :hover{\n    color: #4285F4;\n  }\n'], ['\n  padding-right: ', 'em;\n  font-size: ', ';\n  color: #d9d9d9;\n  :hover{\n    color: #4285F4;\n  }\n']);
@@ -42,7 +41,7 @@ var MenuItemWrapper = _styledComponents2.default.a(_templateObject2, function (p
   return props.padding;
 }, fontSize);
 
-var MenuItem = exports.MenuItem = function MenuItem(props) {
+var MenuItem = function MenuItem(props) {
   return _react2.default.createElement(
     MenuRow,
     null,
@@ -53,3 +52,5 @@ var MenuItem = exports.MenuItem = function MenuItem(props) {
     )
   );
 };
+
+exports.default = MenuItem;
