@@ -3,7 +3,7 @@ import { linkTo } from '@storybook/addon-links';
 import { Welcome } from '@storybook/react/demo';
 import { storiesOf } from '@storybook/react';
 
-storiesOf("Welcome")
+storiesOf("Welcome", module)
   .add('to Storybook', () => (
     <Welcome showApp={linkTo('Button')} />
   ));

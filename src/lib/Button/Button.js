@@ -6,10 +6,9 @@ const background = props => {
   switch(props.theme){
     case "primary":
       return "#4285F4";
-    case "secondary":
-      return "white";
     case "danger":
       return "#DB4437";
+    case "secondary":
     case "ghost":
       return "transparent";
     default:
@@ -19,11 +18,10 @@ const background = props => {
 
 const border = props => {
   switch(props.theme){
-    case "primary":
-    case "danger":
-      return "none";
-    default:
+    case "secondary":
       return "1px solid black";
+    default:
+      return "none";
   }
 }
 
