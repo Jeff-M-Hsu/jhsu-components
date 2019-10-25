@@ -22,14 +22,12 @@ var sizes = {
 var props = {
   regular: function regular() {
     return {
-      disabled: (0, _addonKnobs.boolean)("Disabled (disabled)", false),
-      padding: (0, _addonKnobs.number)("Padding (padding: number)"),
       onClick: (0, _addonActions.action)("onClick"),
       onFocus: (0, _addonActions.action)("onFocus")
     };
   }
 };
-(0, _react2.storiesOf)("MenuItem", module).addDecorator(_addonKnobs.withKnobs).add("with text", function () {
+(0, _react2.storiesOf)("MenuItem", module).add("with text", function () {
   var regularProps = props.regular();
   return _react.default.createElement("div", null, _react.default.createElement(_MenuItem.default, _extends({
     size: "small"

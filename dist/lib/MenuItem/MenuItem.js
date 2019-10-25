@@ -14,7 +14,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  display: block;\n  padding-right: ", ";\n  font-size: ", ";\n  color: #c9c9c9;\n  :hover{\n    color: #4285F4;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: block;\n  font-size: ", ";\n  color: #c9c9c9;\n  :hover{\n    color: #4285F4;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -53,17 +53,14 @@ var fontSize = function fontSize(props) {
 
 var MenuRow = _styledComponents.default.div(_templateObject());
 
-var MenuItemWrapper = _styledComponents.default.a(_templateObject2(), function (props) {
-  return props.padding;
-}, fontSize);
+var MenuItemWrapper = _styledComponents.default.a(_templateObject2(), fontSize);
 
 var MenuItem = function MenuItem(props) {
   return _react.default.createElement(MenuRow, null, _react.default.createElement(MenuItemWrapper, props, props.children));
 };
 
 MenuItem.defaultProps = {
-  size: "medium",
-  padding: "0"
+  size: "medium"
 };
 var _default = MenuItem;
 exports.default = _default;

@@ -30,5 +30,11 @@ var props = {
 };
 (0, _react2.storiesOf)("Menu", module).addDecorator(_addonKnobs.withKnobs).add("with MenuItems", function () {
   var regularProps = props.regular();
-  return _react.default.createElement("div", null, _react.default.createElement(_Menu.default, regularProps, _react.default.createElement(_MenuItem.default, null, "Item 1"), _react.default.createElement(_MenuItem.default, null, "Item 2"), _react.default.createElement(_MenuItem.default, null, "Item 3")));
+  return _react.default.createElement("div", null, _react.default.createElement(_Menu.default, regularProps, _react.default.createElement(_MenuItem.default, {
+    onClick: (0, _addonActions.action)('clicked')
+  }, "Item 1"), _react.default.createElement(_MenuItem.default, {
+    onClick: (0, _addonActions.action)('clicked')
+  }, "Item 2"), _react.default.createElement(_MenuItem.default, {
+    onClick: (0, _addonActions.action)('clicked')
+  }, "Item 3")));
 });

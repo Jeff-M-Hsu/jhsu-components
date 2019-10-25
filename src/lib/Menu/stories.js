@@ -15,7 +15,7 @@ const props = {
     borderB: text("Bottom Border Style (borderB: string)"),
     borderL: text("Left Border Style (borderL: string)"),
     borderA: text("All Border Style (borderA: string)"),
-    borderColor: text("Color (borderColor: string)")
+    borderColor: text("Color (borderColor: string)"),
     };
   },
 };
@@ -27,9 +27,9 @@ storiesOf("Menu", module)
     return(
       <div>
         <Menu {...regularProps}>
-          <MenuItem>Item 1</MenuItem>
-          <MenuItem>Item 2</MenuItem>
-          <MenuItem>Item 3</MenuItem>
+          <MenuItem onClick={action('clicked')}>Item 1</MenuItem>
+          <MenuItem onClick={action('clicked')}>Item 2</MenuItem>
+          <MenuItem onClick={action('clicked')}>Item 3</MenuItem>
         </Menu>
       </div>
     );

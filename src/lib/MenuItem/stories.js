@@ -13,8 +13,6 @@ const sizes = {
 const props = {
   regular: () => {
     return {
-      disabled: boolean("Disabled (disabled)", false),
-      padding: number("Padding (padding: number)"),
       onClick: action("onClick"),
       onFocus: action("onFocus"),
     };
@@ -22,7 +20,6 @@ const props = {
 };
 
 storiesOf("MenuItem", module)
-  .addDecorator(withKnobs)
   .add("with text", () => {
     const regularProps = props.regular();
     return(

@@ -21,7 +21,6 @@ const MenuRow = styled.div`
 `
 const MenuItemWrapper = styled.a`
   display: block;
-  padding-right: ${props => props.padding};
   font-size: ${fontSize};
   color: #c9c9c9;
   :hover{
@@ -35,7 +34,6 @@ const MenuItem = (props) => {
 
 MenuItem.defaultProps = {
   size: "medium",
-  padding: "0"
 }
 
 export default MenuItem;
