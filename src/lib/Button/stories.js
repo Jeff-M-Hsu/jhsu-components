@@ -19,7 +19,6 @@ const sizes = {
 const props = {
   regular: () => {
     return {
-      className: "",
       theme: select("Button theme (theme)", themes, "primary"),
       disabled: boolean("Disabled (disabled)", false),
       size: select("Button size (size)", sizes, "medium"),

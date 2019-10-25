@@ -13,9 +13,8 @@ const sizes = {
 const props = {
   regular: () => {
     return {
-      className: "",
       disabled: boolean("Disabled (disabled)", false),
-      padding: number("Padding"),
+      padding: number("Padding (padding: number)"),
       onClick: action("onClick"),
       onFocus: action("onFocus"),
     };

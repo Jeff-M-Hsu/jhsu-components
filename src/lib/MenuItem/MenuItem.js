@@ -16,12 +16,14 @@ const fontSize = props => {
 }
 
 const MenuRow = styled.div`
+  display: block;
   padding: .5rem;
 `
 const MenuItemWrapper = styled.a`
-  padding-right: ${props => props.padding}em;
+  display: block;
+  padding-right: ${props => props.padding};
   font-size: ${fontSize};
-  color: #d9d9d9;
+  color: #c9c9c9;
   :hover{
     color: #4285F4;
   }
@@ -29,6 +31,11 @@ const MenuItemWrapper = styled.a`
 
 const MenuItem = (props) => {
   return <MenuRow><MenuItemWrapper {...props}>{props.children}</MenuItemWrapper></MenuRow>;
+}
+
+MenuItem.defaultProps = {
+  size: "medium",
+  padding: "0"
 }
 
 export default MenuItem;
