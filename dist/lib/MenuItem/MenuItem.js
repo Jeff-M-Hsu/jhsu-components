@@ -14,7 +14,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  padding-right: ", "em;\n  font-size: ", ";\n  color: #d9d9d9;\n  :hover{\n    color: #4285F4;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: block;\n  padding-right: ", ";\n  font-size: ", ";\n  color: #c9c9c9;\n  :hover{\n    color: #4285F4;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -24,7 +24,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  padding: .5rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: block;\n  padding: .5rem;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -61,5 +61,9 @@ var MenuItem = function MenuItem(props) {
   return _react.default.createElement(MenuRow, null, _react.default.createElement(MenuItemWrapper, props, props.children));
 };
 
+MenuItem.defaultProps = {
+  size: "medium",
+  padding: "0"
+};
 var _default = MenuItem;
 exports.default = _default;

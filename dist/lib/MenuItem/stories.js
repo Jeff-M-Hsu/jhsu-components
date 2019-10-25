@@ -22,9 +22,8 @@ var sizes = {
 var props = {
   regular: function regular() {
     return {
-      className: "",
       disabled: (0, _addonKnobs.boolean)("Disabled (disabled)", false),
-      padding: (0, _addonKnobs.number)("Padding"),
+      padding: (0, _addonKnobs.number)("Padding (padding: number)"),
       onClick: (0, _addonActions.action)("onClick"),
       onFocus: (0, _addonActions.action)("onFocus")
     };
