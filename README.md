@@ -4,6 +4,8 @@ Work in progress to learn about Styled Components, publishing on npm, Storybook,
 
 **Current Elements**
 
-`Button` - Button containing text with 4 themes (primary, secondary, danger, ghost), 3 sizes (small, medium, large), and a disabled flag.
+`Button` - Button containing text with 4 themes (primary, secondary, danger, ghost), 3 sizes (small, medium, large), and a flag to disable it.
 
-`MenuItem` - \<a> element containing a text label with 3 sizes (small, medium, large), a disabled flag, and a padding prop for width adjustment.
+`MenuItem` - \<a> element containing a text label with 3 sizes (small, medium, large).
+
+`Menu` - Container for `MenuItem` with adjustable width, border width, border color, and border styles (top, bottom, right, left, all).
