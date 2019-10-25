@@ -28,7 +28,6 @@ var sizes = {
 var props = {
   regular: function regular() {
     return {
-      className: "",
       theme: (0, _addonKnobs.select)("Button theme (theme)", themes, "primary"),
       disabled: (0, _addonKnobs.boolean)("Disabled (disabled)", false),
       size: (0, _addonKnobs.select)("Button size (size)", sizes, "medium"),
