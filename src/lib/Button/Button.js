@@ -70,6 +70,8 @@ Button.defaultProps = {
 }
 
 Button.propTypes = {
-  type: PropTypes.string,
+  theme: PropTypes.string,
+  border: PropTypes.string,
+  size: PropTypes.string,
 }
 export default Button;

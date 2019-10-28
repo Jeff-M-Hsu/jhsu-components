@@ -10,6 +10,7 @@ const themes = {
   "Danger button (danger)": "danger",
   "Ghost button (ghost)": "ghost",
 };
+
 const sizes = {
   Small: "small",
   Medium: "medium",

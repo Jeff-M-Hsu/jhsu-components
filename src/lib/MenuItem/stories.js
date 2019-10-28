@@ -13,6 +13,7 @@ const sizes = {
 const props = {
   regular: () => {
     return {
+      size: select("Sizes", sizes, "medium"),
       onClick: action("onClick"),
       onFocus: action("onFocus"),
     };
@@ -20,13 +21,14 @@ const props = {
 };
 
 storiesOf("MenuItem", module)
+  .addDecorator(withKnobs)
   .add("with text", () => {
     const regularProps = props.regular();
     return(
       <div>
-        <MenuItem size="small" {...regularProps}>Menu Item</MenuItem>
-        <MenuItem size="medium" {...regularProps}>Menu Item</MenuItem>
-        <MenuItem size="large" {...regularProps}>Menu Item</MenuItem>
+        <MenuItem {...regularProps}>Menu Item</MenuItem>
+        <MenuItem {...regularProps}>Menu Item</MenuItem>
+        <MenuItem {...regularProps}>Menu Item</MenuItem>
       </div>
     )
   });

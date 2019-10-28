@@ -36,4 +36,8 @@ MenuItem.defaultProps = {
   size: "medium",
 }
 
+MenuItem.propTypes = {
+  size: PropTypes.string,
+}
+
 export default MenuItem;
