@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, text, select, boolean, number } from '@storybook/addon-knobs';
 import Card from './Card';
-import Icon from '../Icon';
 import Header from '../Header';
+import Icon from '../Icon';
 
 const sizes = {
   small: "small",
@@ -27,7 +27,7 @@ const props = {
 
 storiesOf("Card", module)
   .addDecorator(withKnobs)
-  .add("default", () => {
+  .add("with Icon and Header", () => {
     const regularProps = props.regular();
     return(
       <div>

@@ -26,13 +26,15 @@ const borderStyle = (props) => {
 
 const CardContainer = styled.div`
   padding: .5rem;
+  display: flex;
 `
 
 const CardWrapper = styled.div`
   display: flex;
   align-items: center;
-  width: ${cardSize};
+  width: auto;
   border: ${borderStyle};
+  padding-right: 1rem;
 `
 
 const Card = (props) => {
