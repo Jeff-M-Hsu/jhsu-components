@@ -14,7 +14,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  display: block;\n  font-size: ", ";\n  color: #c9c9c9;\n  :hover{\n    color: #4285F4;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  align-items: center;\n  width: auto;\n  border: ", ";\n  padding-right: 1rem;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -24,7 +24,7 @@ function _templateObject2() {
 }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  display: block;\n  padding: .5rem;\n"]);
+  var data = _taggedTemplateLiteral(["\n  padding: .5rem;\n  display: flex;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -35,35 +35,46 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var fontSize = function fontSize(props) {
+var cardSize = function cardSize(props) {
   switch (props.size) {
     case "small":
-      return ".8em";
+      return "30%";
 
     case "medium":
-      return "1em";
+      return "40%";
 
     case "large":
-      return "1.2em";
+      return "50%";
 
     default:
-      return "1em";
+      return "30%";
   }
 };
 
-var MenuRow = _styledComponents.default.div(_templateObject());
+var borderStyle = function borderStyle(props) {
+  switch (props.border) {
+    case "none":
+      return "none";
 
-var MenuItemWrapper = _styledComponents.default.a(_templateObject2(), fontSize);
-
-var MenuItem = function MenuItem(props) {
-  return _react.default.createElement(MenuRow, null, _react.default.createElement(MenuItemWrapper, props, props.children));
+    default:
+      return "solid #d9d9d9 1px";
+  }
 };
 
-MenuItem.defaultProps = {
-  size: "medium"
+var CardContainer = _styledComponents.default.div(_templateObject());
+
+var CardWrapper = _styledComponents.default.div(_templateObject2(), borderStyle);
+
+var Card = function Card(props) {
+  return _react.default.createElement(CardContainer, null, _react.default.createElement(CardWrapper, props, props.children));
 };
-MenuItem.propTypes = {
+
+Card.defaultProps = {
+  size: "small",
+  border: ""
+};
+Card.propTypes = {
   size: _propTypes.default.string
 };
-var _default = MenuItem;
+var _default = Card;
 exports.default = _default;

@@ -93,7 +93,9 @@ Button.defaultProps = {
   size: "medium"
 };
 Button.propTypes = {
-  type: _propTypes.default.string
+  theme: _propTypes.default.string,
+  border: _propTypes.default.string,
+  size: _propTypes.default.string
 };
 var _default = Button;
 exports.default = _default;
