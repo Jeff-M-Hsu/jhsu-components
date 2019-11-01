@@ -21,12 +21,17 @@ var sizes = {
   small: "small",
   thumbnail: "thumbnail"
 };
+var floats = {
+  left: "left",
+  right: "right"
+};
 var props = {
   regular: function regular() {
     return {
       shape: (0, _addonKnobs.select)("Shape", shapes, "circle"),
       size: (0, _addonKnobs.select)("Size", sizes, ""),
-      src: (0, _addonKnobs.text)("Source (src)", "https://dummyimage.com/250x250.jpg/612/ffffff")
+      src: (0, _addonKnobs.text)("Source (src)", "https://dummyimage.com/250x250.jpg/612/ffffff"),
+      float: (0, _addonKnobs.select)("Align (float)", floats, "left")
     };
   }
 };

@@ -15,12 +15,18 @@ const sizes = {
   thumbnail: "thumbnail",
 }
 
+const floats = {
+  left: "left",
+  right: "right",
+}
+
 const props = {
   regular: () => {
     return {
       shape: select("Shape", shapes, "circle"),
       size: select("Size", sizes, ""),
       src: text("Source (src)", "https://dummyimage.com/250x250.jpg/612/ffffff"),
+      float: select("Align (float)", floats, "left"),
     };
   },
 };

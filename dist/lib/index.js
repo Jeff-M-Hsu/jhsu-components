@@ -39,6 +39,12 @@ Object.defineProperty(exports, "Card", {
     return _Card.default;
   }
 });
+Object.defineProperty(exports, "Accordion", {
+  enumerable: true,
+  get: function get() {
+    return _Accordion.default;
+  }
+});
 
 var _Button = _interopRequireDefault(require("./Button"));
 
@@ -51,5 +57,7 @@ var _Icon = _interopRequireDefault(require("./Icon"));
 var _Header = _interopRequireDefault(require("./Header"));
 
 var _Card = _interopRequireDefault(require("./Card"));
+
+var _Accordion = _interopRequireDefault(require("./Accordion"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

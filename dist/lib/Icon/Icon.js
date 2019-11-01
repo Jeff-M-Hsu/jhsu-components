@@ -14,7 +14,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  border-radius: ", ";\n  padding: .5rem;\n  width: ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n  border-radius: ", ";\n  padding: .5rem;\n  width: ", ";\n  float: ", ";\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -48,7 +48,9 @@ var Size = function Size(props) {
   }
 };
 
-var IconWrapper = _styledComponents.default.img(_templateObject(), Shape, Size);
+var IconWrapper = _styledComponents.default.img(_templateObject(), Shape, Size, function (props) {
+  return props.float;
+});
 
 var Icon = function Icon(props) {
   return _react.default.createElement(IconWrapper, props, props.children);
@@ -56,7 +58,8 @@ var Icon = function Icon(props) {
 
 Icon.defaultProps = {
   src: "https://dummyimage.com/250x250.jpg/612/ffffff",
-  shape: "circle"
+  shape: "circle",
+  float: "left"
 };
 var _default = Icon;
 exports.default = _default;

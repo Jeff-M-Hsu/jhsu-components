@@ -26,6 +26,7 @@ const IconWrapper = styled.img`
   border-radius: ${Shape};
   padding: .5rem;
   width: ${Size};
+  float: ${props => (props.float)};
 `
 
 const Icon = (props) => {
@@ -37,6 +38,7 @@ const Icon = (props) => {
 Icon.defaultProps = {
   src: "https://dummyimage.com/250x250.jpg/612/ffffff",
   shape: "circle",
+  float: "left",
 }
 
 export default Icon;
