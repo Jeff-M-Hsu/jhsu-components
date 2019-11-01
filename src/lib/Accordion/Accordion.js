@@ -32,7 +32,6 @@ const AccordionContent = styled.div`
   transition: ${props => (props.isOn ? "max-height .3s ease-in" : "max-height .3s")};
 
   div{
-    display: inline-block;
     margin: .5em;
     padding-bottom: .5em;
   }
