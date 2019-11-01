@@ -36,7 +36,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  width: ", ";\n  overflow: hidden;\n  max-height: ", ";\n  transition: ", ";\n\n  div{\n    display: inline-block;\n    margin: .5em;\n    padding-bottom: .5em;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n  width: ", ";\n  overflow: hidden;\n  max-height: ", ";\n  transition: ", ";\n\n  div{\n    margin: .5em;\n    padding-bottom: .5em;\n  }\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
