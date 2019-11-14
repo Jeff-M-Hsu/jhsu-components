@@ -8,14 +8,14 @@ import Menu from './Menu';
 const props = {
   regular: () => {
     return{
-    width: text("Menu Width (width: string)"),
-    borderWidth: number("Border Width (borderWidth: number)"),
-    borderT: text("Top Border Style (borderT: string)"),
-    borderR: text("Right Border Style (borderR: string)"),
-    borderB: text("Bottom Border Style (borderB: string)"),
-    borderL: text("Left Border Style (borderL: string)"),
-    borderA: text("All Border Style (borderA: string)"),
-    borderColor: text("Color (borderColor: string)"),
+    width: text("Menu Width (width: string)", "15%"),
+    borderWidth: number("Border Width (borderWidth: number)", "1px"),
+    borderT: text("Top Border Style (borderT: string)", "none"),
+    borderR: text("Right Border Style (borderR: string)", "none"),
+    borderB: text("Bottom Border Style (borderB: string)", "solid"),
+    borderL: text("Left Border Style (borderL: string)", "solid"),
+    borderA: text("All Border Style (borderA: string)", "none"),
+    borderColor: text("Color (borderColor: string)" "#d9d9d9"),
     };
   },
 };
