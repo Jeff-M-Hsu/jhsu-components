@@ -15,7 +15,7 @@ const props = {
     borderB: text("Bottom Border Style (borderB: string)", "solid"),
     borderL: text("Left Border Style (borderL: string)", "solid"),
     borderA: text("All Border Style (borderA: string)", "none"),
-    borderColor: text("Color (borderColor: string)" "#d9d9d9"),
+    borderColor: text("Color (borderColor: string)", "#d9d9d9"),
     };
   },
 };
