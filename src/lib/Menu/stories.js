@@ -9,12 +9,12 @@ const props = {
   regular: () => {
     return{
     width: text("Menu Width (width: string)", "15%"),
-    borderWidth: number("Border Width (borderWidth: number)", "1px"),
-    borderT: text("Top Border Style (borderT: string)", "none"),
+    borderWidth: number("Border Width (borderWidth: number)", "1"),
+    borderT: text("Top Border Style (borderT: string)", "solid"),
     borderR: text("Right Border Style (borderR: string)", "none"),
     borderB: text("Bottom Border Style (borderB: string)", "solid"),
-    borderL: text("Left Border Style (borderL: string)", "solid"),
-    borderA: text("All Border Style (borderA: string)", "none"),
+    borderL: text("Left Border Style (borderL: string)", "none"),
+    borderA: text("All Border Style (borderA: string)"),
     borderColor: text("Color (borderColor: string)", "#d9d9d9"),
     };
   },
