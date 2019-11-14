@@ -1,6 +1,6 @@
 # Jeffrey Hsu's React Component Library
 
-Work in progress to learn about Styled Components, publishing on npm, Storybook, component design, and getting deeper into React.
+Work in progress to learn about Styled Components, publishing on npm, Storybook, and to hone my component design skills. You can check out a live demo [here](https://jhsu-components.jeffmhsu.now.sh/) and change component styles with all the different props available under the Knobs tab.
 
 **Current Elements**
 
