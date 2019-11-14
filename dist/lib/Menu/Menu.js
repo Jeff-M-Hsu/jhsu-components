@@ -14,7 +14,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  padding: .5em;\n  width: ", ";\n  border-top-style: ", ";\n  border-right-style: ", ";\n  border-bottom-style: ", ";\n  border-left-style: ", ";\n  border-width: ", "px;\n  border-color: ", ";\n  \n"]);
+  var data = _taggedTemplateLiteral(["\n  padding: .5em;\n  width: ", ";\n  border-top-style: ", ";\n  border-right-style: ", ";\n  border-bottom-style: ", ";\n  border-left-style: ", ";\n  border-style: ", ";\n  border-width: ", "px;\n  border-color: ", ";\n  \n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -35,6 +35,8 @@ var MenuWrapper = _styledComponents.default.div(_templateObject(), function (pro
   return props.borderB;
 }, function (props) {
   return props.borderL;
+}, function (props) {
+  return props.borderA;
 }, function (props) {
   return props.borderWidth;
 }, function (props) {

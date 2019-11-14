@@ -17,14 +17,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var props = {
   regular: function regular() {
     return {
-      width: (0, _addonKnobs.text)("Menu Width (width: string)"),
-      borderWidth: (0, _addonKnobs.number)("Border Width (borderWidth: number)"),
-      borderT: (0, _addonKnobs.text)("Top Border Style (borderT: string)"),
-      borderR: (0, _addonKnobs.text)("Right Border Style (borderR: string)"),
-      borderB: (0, _addonKnobs.text)("Bottom Border Style (borderB: string)"),
-      borderL: (0, _addonKnobs.text)("Left Border Style (borderL: string)"),
+      width: (0, _addonKnobs.text)("Menu Width (width: string)", "15%"),
+      borderWidth: (0, _addonKnobs.number)("Border Width (borderWidth: number)", "1"),
+      borderT: (0, _addonKnobs.text)("Top Border Style (borderT: string)", "solid"),
+      borderR: (0, _addonKnobs.text)("Right Border Style (borderR: string)", "none"),
+      borderB: (0, _addonKnobs.text)("Bottom Border Style (borderB: string)", "solid"),
+      borderL: (0, _addonKnobs.text)("Left Border Style (borderL: string)", "none"),
       borderA: (0, _addonKnobs.text)("All Border Style (borderA: string)"),
-      borderColor: (0, _addonKnobs.text)("Color (borderColor: string)")
+      borderColor: (0, _addonKnobs.text)("Color (borderColor: string)", "#d9d9d9")
     };
   }
 };

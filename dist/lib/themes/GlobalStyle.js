@@ -8,7 +8,7 @@ exports.default = void 0;
 var _styledComponents = require("styled-components");
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  * {\n    @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');\n    font-family: Roboto, Helvetica, sans-serif !important;\n  }\n"]);
+  var data = _taggedTemplateLiteral(["\n\t@font-face{\n\t\tfont-family: \"Roboto\";\n\t\tsrc: url('https://fonts.googleapis.com/css?family=Roboto&display=swap');\n\t}\n  * {\n    font-family: \"Roboto\", Helvetica, sans-serif !important;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
