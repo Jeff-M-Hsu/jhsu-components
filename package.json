@@ -15,7 +15,6 @@
   "scripts": {
     "storybook": "start-storybook -p 9009 -s public",
 		"build": "build-storybook -c .storybook -o public",
-    "build-storybook": "build-storybook -s public",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!your-module-name)/\"",
     "transpile": "babel src -d dist --copy-files"
   },
