@@ -9,7 +9,7 @@ const MenuWrapper = styled.div`
   border-right-style: ${props => props.borderR};
   border-bottom-style: ${props => props.borderB};
   border-left-style: ${props => props.borderL};
-	border-style: ${props => props.borderA};
+  border-style: ${props => props.borderA};
   border-width: ${props => props.borderWidth}px;
   border-color: ${props => props.borderColor};
   
