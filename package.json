@@ -1,6 +1,6 @@
 {
   "name": "jhsu-components",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "Jeffrey Hsu's React Component Library",
   "main": "dist/index.js",
   "dependencies": {
@@ -14,7 +14,7 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 9009 -s public",
-		"build": "build-storybook -c .storybook -o build",
+    "build": "build-storybook -c .storybook -o build",
     "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!your-module-name)/\"",
     "transpile": "babel src -d dist --copy-files"
   },
