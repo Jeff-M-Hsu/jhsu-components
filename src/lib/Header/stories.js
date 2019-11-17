@@ -8,6 +8,7 @@ const props = {
   regular: () => {
     return {
       size: text("Font Size", "1.2em"),
+      color: text("Font Color", "black"),
     };
   },
 };

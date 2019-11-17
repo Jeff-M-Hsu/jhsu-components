@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 const HeaderStyle = styled.span`
   font-weight: bold;
   font-size: ${props => props.size};
+  color: ${props => props.color};
 `
 
 const Header = (props) => {

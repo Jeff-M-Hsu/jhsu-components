@@ -17,7 +17,7 @@ const fontSize = props => {
 
 const MenuRow = styled.div`
   display: block;
-  padding: .5rem;
+  padding: .5em;
 `
 const MenuItemWrapper = styled.a`
   display: block;
