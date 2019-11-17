@@ -5,3 +5,4 @@ export { default as Icon } from './Icon';
 export { default as Header } from './Header';
 export { default as Card } from './Card';
 export { default as Accordion } from './Accordion';
+export { default as Dropdown } from './Dropdown';
