@@ -17,3 +17,5 @@ Work in progress to learn about Styled Components, publishing on npm, Storybook,
 `Card` - Container that uses `Icon` and `Header` to display information such as profiles. An example would be the "about the author" sections on Medium.com articles.
 
 `Accordion` - A clickable header that expands to show a content \<div>. It accepts a size (small, medium, large) and a title prop. Content \<div> currently supports a max-height of 300em.
+
+`Dropdown` - A clickable icon that reveals a menu. It accepts an image src as a prop.
