@@ -15,7 +15,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var props = {
   regular: function regular() {
     return {
-      size: (0, _addonKnobs.text)("Font Size", "1.2em")
+      size: (0, _addonKnobs.text)("Font Size", "1.2em"),
+      color: (0, _addonKnobs.text)("Font Color", "black")
     };
   }
 };

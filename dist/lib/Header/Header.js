@@ -14,7 +14,7 @@ var _propTypes = _interopRequireDefault(require("prop-types"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  font-weight: bold;\n  font-size: ", ";\n"]);
+  var data = _taggedTemplateLiteral(["\n  font-weight: bold;\n  font-size: ", ";\n  color: ", ";\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -27,6 +27,8 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var HeaderStyle = _styledComponents.default.span(_templateObject(), function (props) {
   return props.size;
+}, function (props) {
+  return props.color;
 });
 
 var Header = function Header(props) {
